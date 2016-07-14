@@ -266,7 +266,7 @@ li {
 
 .director {
   /*padding-top: 35px;*/
-  float:left;
+
   margin-top:10px;
   padding-bottom: 10px;
   width:300px;
@@ -441,7 +441,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .director {
   /*padding-top: 35px;*/
-  float:left;
   width:220px;
   font-size:14px;
   font-weight: 100;

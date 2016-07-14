@@ -1,0 +1,531 @@
+/**, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	background: #fff;
+	color: #505050;
+	font: 14px 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+	margin:0;
+	padding: 0;
+	min-height: 100%;
+    min-width: 100%;
+	outline:0;
+	border:0;
+	vertical-align:baseline;
+	line-height:1;
+}
+
+.full{
+	height: 100%;
+	min-height: 100%;
+}
+
+.header {
+	background: #efefef;
+	padding: 0;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 30px;
+	line-height: 150px;
+}
+
+p.sub-title {
+	font-size: 20px;
+	color: #fff;
+	background: #969696;
+	padding: 0 30px;
+	line-height: 50px;
+}
+
+.main {
+	padding: 5px 30px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	line-height: 20px;
+}
+
+li {
+	padding: 4px 0;
+}
+
+a {
+	color: #267cb2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.lateral-spaced {
+	margin-left: 3px;
+	margin-right:3px;
+}
+
+.img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+	margin-bottom: 10px;
+}
+
+.pushed {
+	margin-left:10px;
+}
+
+------------------------------------------------*/
+body {
+  background-color: white;
+  font-family:helvetica;
+}
+
+
+li {
+  display:inline;
+  /*padding-top:20px;*/
+  padding-right: 20px;
+}
+
+
+
+.centered{
+  width:400px;
+  left:50%;
+  margin-left:200px;
+}
+
+.img-thumbnail {
+  width:100%;
+  border: none;
+}
+
+/* .imgWrap:hover {
+  opacity:0.85;
+} */
+
+.imgWrap {
+  position: relative;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  height:100%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*------------------------------------*/
+  background: rgba(255,200,255,0.5);
+  /*------------------------------------*/
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+.newcenter {
+
+  color: blue;
+  font-size: 40px;
+  font-weight: 100;
+  position:relative;
+  letter-spacing: 5px;
+  text-align:center;
+  top:50%;
+  margin: -20px 0 0 0;
+}
+
+
+.imgWrap:hover .title {
+  visibility: visible;
+  opacity: 1;
+}
+
+.forradio{
+  color: blue;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.hidey {
+  display:none !important;
+}
+
+/*===========================================================================*/
+
+.audioplayer {
+    width: 480px;
+    height: 60px;
+    margin: 20px auto auto auto;
+    border: solid;
+}
+
+.playbutton {
+    height: 60px;
+    width: 60px;
+    border: none;
+    float: left;
+    outline: none;
+}
+
+.play {
+    background: url(../imgs/play.png);
+}
+
+.pause {
+    background: url(../imgs/pause.png);
+}
+
+.play,
+.pause {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timeline {
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .2);
+}
+
+.playhead {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+
+/*-----------------------STYLING STUPID DUMB NAVBAR-------------------------*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.newBoy:before {
+    content: 'JOHN PARLATO';
+}
+.newBoy:hover:before {
+    content: 'about';
+}
+
+.aboutme {
+  font-size:35px;
+  font-weight: 100;
+}
+
+.bio {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.johnnyboy {
+    float:right;
+    right:10%;
+  position:fixed;
+  z-index:-1000;
+  border-radius: 50%;
+}
+
+
+
+.director {
+  /*padding-top: 35px;*/
+  float:left;
+  margin-top:10px;
+  padding-bottom: 10px;
+  width:300px;
+  font-size:20px;
+  font-weight: 100;
+  color: black;
+  line-height: 0px;
+  letter-spacing: 2.4px;
+}
+
+.navbar {
+  padding-top:25px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* JOHN PARLATO */
+.navbar-default .navbar-brand {
+  /*padding-top: 35px;*/
+  width:300px;
+  font-size:35px;
+  font-weight: 100;
+  color: black;
+}
+/* JOHN PARLATO HOVER*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: violet;
+  background-color: transparent;
+}
+/* text */
+.navbar-default .navbar-text {
+  color: black;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  font-size: 35px;
+  font-weight: 100;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: violet;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: black;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: violet;
+}
+.navbar-default .navbar-toggle .d {
+  background-color: black;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: black;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .director,
+  .navbar > .container-fluid .director {
+    margin-left: -15px;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-link {
+  color: #777;
+}
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+.navbar-default .btn-link {
+  color: #777;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+/*-----------------------STYLING STUPID DUMB NAVBAR-------------------------*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+ /*body {
+  background-color: yellow;
+}*/
+
+.hidey {
+  display:block !important;
+}
+
+.johnnyboy {
+    float:right;
+    right:10%;
+  position:relative;
+  border-radius: 50%;
+  left:0;
+  right:0;
+  width:300px;
+}
+
+.forradio{
+  color: blue;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.navbar-default .navbar-brand {
+  /*padding-top: 35px;*/
+  width:220px;
+  font-size:24px;
+  font-weight: 100;
+  color: black;
+}
+
+.director {
+  /*padding-top: 35px;*/
+  float:left;
+  width:220px;
+  font-size:14px;
+  font-weight: 100;
+  color: black;
+  line-height: 0;
+  letter-spacing: 1.6px;
+}
+
+/*===========================================================================*/
+
+.audioplayer {
+    width: 280px;
+    height: 50px;
+    margin: 10px auto auto auto;
+    border: solid;
+}
+
+.playbutton {
+    height: 50px;
+    width: 50px;
+    border: none;
+    float: left;
+    outline: none;
+}
+
+.play {
+    background: url(../imgs/play.png);
+}
+
+.pause {
+    background: url(../imgs/pause.png);
+}
+
+.play,
+.pause {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timeline {
+    width: 200px;
+    height: 10px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .2);
+}
+
+.playhead {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: -1px;
+    background: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------*/
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}

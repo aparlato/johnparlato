@@ -109,7 +109,6 @@ li {
 }
 
 
-
 .centered{
   width:400px;
   left:50%;
@@ -408,6 +407,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: yellow;
 }*/
 
+
 .hidey {
   display:block !important;
 }
@@ -512,6 +512,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
 /* Styles */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 754px;
+  height: auto;
+}
+
+
+.imgWrap {
+  height:113px;
+  width:290px;
+  overflow:hidden;
+}
+
+.img-thumbnail {
+  height:113px;
+  width:754px;
+}
 }
 
 /* iPads (portrait and landscape) ----------- */

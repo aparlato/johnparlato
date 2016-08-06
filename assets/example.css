@@ -1,7 +1,8 @@
 
 body {
   background-color: white;
-  font-family:helvetica;
+
+font-family: 'Roboto', sans-serif;
 }
 
 
@@ -54,7 +55,7 @@ li {
 
   color: blue;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 300;
   position:relative;
   letter-spacing: 5px;
   text-align:center;
@@ -71,7 +72,7 @@ li {
 .forradio{
   color: blue;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 5px;
   text-align: center;
   padding-top: 30px;
@@ -147,13 +148,25 @@ li {
 
 .aboutme {
   font-size:35px;
-  font-weight: 100;
+  font-weight: 300;
+  display:inline;
+}
+
+.aboutme:before {
+  content : "";
+  position: absolute;
+  left    : 17px;
+  bottom  : 0;
+  height  : 1px;
+  width   : 16%;  /* or 100px */
+  padding-bottom:3px;
+  border-bottom:2px solid black;
 }
 
 .bio {
   padding-top: 30px;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .johnnyboy {
@@ -161,7 +174,10 @@ li {
     right:10%;
   position:fixed;
   z-index:-1000;
+
   border-radius: 50%;
+
+  border:0;
 }
 
 
@@ -173,7 +189,7 @@ li {
   padding-bottom: 10px;
   width:300px;
   font-size:20px;
-  font-weight: 100;
+  font-weight: 300;
   color: black;
   line-height: 0px;
   letter-spacing: 2.4px;
@@ -192,7 +208,7 @@ li {
   /*padding-top: 35px;*/
   width:300px;
   font-size:35px;
-  font-weight: 100;
+  font-weight: 300;
   color: black;
 }
 /* JOHN PARLATO HOVER*/
@@ -208,7 +224,7 @@ li {
 .navbar-default .navbar-nav > li > a {
   color: black;
   font-size: 35px;
-  font-weight: 100;
+  font-weight: 300;
 
 }
 
@@ -310,6 +326,29 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: yellow;
 }*/
 
+.newcenter {
+
+  font-size: 35px;
+
+}
+
+.aboutme {
+  font-size:26px;
+  font-weight: 300;
+  display: inline;
+}
+
+.aboutme:before {
+  content : "";
+  position: absolute;
+  left    : 21px;
+  bottom  : 0;
+  height  : 1px;
+  width   : 65%;  /* or 100px */
+  padding-bottom:3px;
+  border-bottom:2px solid black;
+}
+
 
 .hidey {
   display:block !important;
@@ -328,7 +367,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .forradio{
   color: blue;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 5px;
   text-align: center;
   padding-top: 30px;
@@ -336,9 +375,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .navbar-default .navbar-brand {
   /*padding-top: 35px;*/
-  width:220px;
-  font-size:24px;
-  font-weight: 100;
+  width:225px;
+  font-size:26px;
+  font-weight: 300;
   color: black;
 }
 
@@ -346,7 +385,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   /*padding-top: 35px;*/
   width:220px;
   font-size:14px;
-  font-weight: 100;
+  font-weight: 300;
   color: black;
   line-height: 0;
   letter-spacing: 1.6px;
@@ -440,17 +479,169 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+
+    .newcenter {
+
+      font-size: 35px;
+
+    }
+
+    .aboutme {
+      font-size:26px;
+      font-weight: 300;
+      display: inline;
+    }
+
+    .aboutme:before {
+      content : "";
+      position: absolute;
+      left    : 21px;
+      bottom  : 0;
+      height  : 1px;
+      width   : 65%;  /* or 100px */
+      padding-bottom:3px;
+      border-bottom:2px solid black;
+    }
+
+
+    .hidey {
+      display:block !important;
+    }
+
+    .johnnyboy {
+        float:right;
+        right:10%;
+      position:relative;
+      border-radius: 50%;
+      left:0;
+      right:0;
+      width:300px;
+    }
+
+    .forradio{
+      color: blue;
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: 5px;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .navbar-default .navbar-brand {
+      /*padding-top: 35px;*/
+      width:225px;
+      font-size:26px;
+      font-weight: 300;
+      color: black;
+    }
+
+    .director {
+      /*padding-top: 35px;*/
+      width:220px;
+      font-size:14px;
+      font-weight: 300;
+      color: black;
+      line-height: 0;
+      letter-spacing: 1.6px;
+    }
+
+    /*===========================================================================*/
+
+    .audioplayer {
+        width: 280px;
+        height: 50px;
+        margin: 10px auto auto auto;
+        border: solid;
+    }
+
+    .playbutton {
+        height: 50px;
+        width: 50px;
+        border: none;
+        float: left;
+        outline: none;
+    }
+
+    .play {
+        background: url(../imgs/play.png);
+    }
+
+    .pause {
+        background: url(../imgs/pause.png);
+    }
+
+    .play,
+    .pause {
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .timeline {
+        width: 200px;
+        height: 10px;
+        margin-top: 20px;
+        float: left;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, .2);
+    }
+
+    .playhead {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-top: -1px;
+        background: rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
+
+
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .img-responsive,
+    .thumbnail > img,
+    .thumbnail a > img,
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      display: block;
+      max-width: 754px;
+      height: auto;
+    }
+
+
+    .imgWrap {
+      height:113px;
+      width:374px;
+      overflow:hidden;
+    }
+
+    .img-thumbnail {
+      height:113px;
+      width:754px;
+    }
+
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
 }
